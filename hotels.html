@@ -4,19 +4,22 @@
     <meta charset="utf-8">
     <title> HTML Academy: Седона </title>
     <base target="_blank">
+    <link href="css/styles.css" rel="stylesheet">
   </head>
   <body>
 
   	<!-- 
     <p> Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss"> HTML и CSS, уровень 1 </a>». </p>
     -->
+            <img src="img/hotels/checkbox-off.svg" alt="Проверяю правильность экспорта иконок">
+            <img src="img/hotels/checkbox-on.svg" alt="Проверяю правильность экспорта иконок">
 
-<header class="main-header">
+<header class="main-header" >
 
 	<nav class="main-navigation">
 
   <a class="main-header-logo" href="index.html"> 
-      <img src="index-logo.svg" width="50" height="50" alt="Логотип города">
+      <img src="img\common\logo.svg" width="140" height="72" alt="Логотип города"> 
   </a>
     
 		<ul class="site-navigation">
@@ -31,6 +34,8 @@
 </header>
 
 <main class="container">
+<!-- Всегда готовое к переносу в background-image. В макете использовано большое фото, не понял зачем, если достаточно этого "огрызка" -->
+<img src="img\hotels\backgroundphoto.jpg" height="250" width="820">
 
 <section class="hotel options"> 
 <!--Форма -->
@@ -43,42 +48,51 @@
    <ul>
 
     <li class="result">
-      <img src="img/amara-rs.jpg" alt="общий вид гостиницы AMARA RESOR & SPA">
+      <img src="img/hotels/amara.jpg" alt="общий вид гостиницы AMARA RESOR & SPA">
       <h2 class="hotel-name"> AMARA RESOR & SPA </h2>
       <p> Гостиница от 4000 р. </p> 
 
-      <p> <a href="amara-rs.html"> Подробнее </a> </p>
-      <p> <a href="reservation.html"> Забронировать </a> </p>
+      <p> <a href="amara-rs.html" style="background-color: #81b3d2"> Подробнее </a> </p>
+      <p> <a href="reservation.html" style="background-color: #a48c7c"> Забронировать </a> </p>
 
-      <p class="rating"> Рейтиг: 8.5 </p>
+      <p class="rating" style="background-color: #ccc7c7"> Рейтиг: 8.5 </p>
 
-      <img src="img/rating-1.jpg" alt="Рейтиг гостиницы AMARA RESOR & SPA">
+      <img src="img/hotels/star.svg" alt="Рейтиг гостиницы AMARA RESOR & SPA">
+      <img src="img/hotels/star.svg" alt="Рейтиг гостиницы AMARA RESOR & SPA">
+      <img src="img/hotels/star.svg" alt="Рейтиг гостиницы AMARA RESOR & SPA">
+      <img src="img/hotels/star.svg" alt="Рейтиг гостиницы AMARA RESOR & SPA">
+      
    </li>
 
 
     <li class="result">
-      <img src="img/desert-qi.jpg" alt="общий вид гостиницы DESERT QUAIl INN">
+       <img src="img/hotels/desert.jpg" alt="общий вид гостиницы DESERT QUAIl INN">
       <h2 class="hotel-name"> DESERT QUAIl INN </h2>
       <p> Мотель от 3000 р. </p>
 
-      <p> <a href="amara-rs.html"> Подробнее </a> </p>
-      <p> <a href="reservation.html"> Забронировать </a> </p>
+      <p> <a href="amara-rs.html" style="background-color: #81b3d2"> Подробнее </a> </p>
+      <p> <a href="reservation.html" style="background-color: #a48c7c"> Забронировать </a> </p>
 
-      <p class="rating"> Рейтиг: 8.9 </p>     
-      <img src="img/rating-2.jpg" alt="Рейтиг гостиницы DESERT QUAIl INN">
+      <p class="rating" style="background-color: #ccc7c7"> Рейтиг: 8.9 </p>     
+      <img src="img/hotels/star.svg" alt="Рейтиг гостиницы DESERT QUAIl INN">
+      <img src="img/hotels/star.svg" alt="Рейтиг гостиницы DESERT QUAIl INN">
+      <img src="img/hotels/star.svg" alt="Рейтиг гостиницы DESERT QUAIl INN">
+
     </li>
 
 
     <li class="result">
-      <img src="img/villas-apd.jpg" alt="общий вид гостиницы VILLAS AT POCO DIABLO">
+      <img src="img/hotels/villas.jpg" alt="общий вид гостиницы VILLAS AT POCO DIABLO">
       <h2 class="hotel-name"> VILLAS AT POCO DIABLO </h2>
       <p> Апартаменты от 2000 р. </p>
 
-      <p> <a href="amara-rs.html"> Подробнее </a> </p>
-      <p> <a href="reservation.html"> Забронировать </a> </p>
+      <p> <a href="amara-rs.html" style="background-color: #81b3d2"> Подробнее </a> </p>
+      <p> <a href="reservation.html" style="background-color: #a48c7c"> Забронировать </a> </p>
 
-      <p class="rating"> Рейтиг: 9.2 </p>
-      <img src="img/rating-3.jpg" alt="Рейтиг апартаментов VILLAS AT POCO DIABLO">
+      <p class="rating" style="background-color: #ccc7c7"> Рейтиг: 9.2 </p>
+      <img src="img/hotels/star.svg" alt="Рейтиг апартаментов VILLAS AT POCO DIABLO">
+      <img src="img/hotels/star.svg" alt="Рейтиг апартаментов VILLAS AT POCO DIABLO">
+
     </li>
   
   </ul>
@@ -94,16 +108,30 @@
     
     <div class="footer-social">
       <ul>
-        <li> <a class="social-button" href="https://twitter.com/search?q=sedona%20arizona&src=tyah"> Twitter </a> </li>
-        <li> <a class="social-button" href="https://www.facebook.com/VisitSedona/?ref=br_rs"> Facebook </a> </li>
-        <li> <a class="social-button" href="https://www.youtube.com/results?search_query=sedona+arizona"> Youtube </a> </li>
+            <li> 
+            <a class="social-button" href="https://twitter.com/search?q=sedona%20arizona&src=tyah"> Twitter </a> 
+            <img src="img/common/twitter.svg" style="background-color: #b3d1e2">
+            </li>
+
+            
+            <li> 
+            <a class="social-button" href="https://www.facebook.com/VisitSedona/?ref=br_rs"> Facebook </a> 
+            <img src="img/common/fb.svg" style="background-color: #b3d1e2">
+            </li>
+
+            <li>
+            <a class="social-button" href="https://www.youtube.com/results?search_query=sedona+arizona"> Youtube </a> 
+            <img src="img/common/Youtube.svg" style="background-color: #b3d1e2">           
+            </li>            
       </ul>
     </div>
 
     <p>
       Website by
       <a href="https://htmlacademy.ru/intensive/htmlcss">
-      <img src="img/al.jpg" width="100" height="50" alt="Логотип htmlacademy">
+      <a href="https://htmlacademy.ru/intensive/htmlcss">
+      <!-- Тут должно быть SVG, но оно в макете почему-то белое(какой-то эффект наложения подключен)-->
+      <img src="img/common/logo_html.jpg" width="115" height="41" alt="Логотип htmlacademy"> 
       </a>
     </p>
 
