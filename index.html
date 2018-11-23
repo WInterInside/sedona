@@ -29,7 +29,6 @@
 
 	</nav>
 
-<!-- Всегда готовое к переносу в background-image. Из макета вырезано с помощью соединения группы слоев. Почему? Покрутил макет, и показалось, что разделять фонове изображение это на слои смысла нет, и для фона в отелях будем использовать другой фрагмент изображения, выставленый отдельным фоном. как-то так. -->
 <img src="img/index/backgroundphoto.jpg" height="520" width="1200">
 
 </header>
@@ -72,8 +71,7 @@
         	</li>
 
         	<li class="reasons-item-img" style="background-color: #81b3d2">
-                <!-- я знаю, что так стилизовать не модно -->
-        		<img src="img/index/bridge.jpg" alt="devil's bridge photo">
+                <img src="img/index/bridge.jpg" alt="devil's bridge photo">
         		<h3> Там есть Мост дьявола </h3 >
         		<p> — №2 — </p>
         		<p> Да, по нему можно пройти! Если конечно вы осмелитесь </p>
@@ -112,27 +110,34 @@
 <br> <!-- временный, надеюсь не убьешь -->
 <br> <!-- временный, надеюсь не убьешь -->
 
-	<form action="https://echo.htmlacademy.ru" method="get">
+	<form action="https://echo.htmlacademy.ru" method="post">
 		<fieldset>
+			<p>
 				<div>
 					<label for="date-in"> Дата заезда </label>
 					<input type="date" name="date" id="date-in">
 				</div>
+            </p>
 
+			<p>
 				<div>			
 					<label for="date-out"> Дата выезда </label>
 					<input type="date" name="date" id="date-out">
 				</div>
+		    </p>
 
+            <p>
 				<div>
 					<label for="grown"> Взрослые </label>
 					<input type="number" name="grown" id="grown" min="0" max="100">
 					<label for="baby"> Дети </label>
 					<input type="number" name="baby" id="baby" min="0" max="100">
 				</div>
+			</p>
 
-				<input type="submit" name="submit" value="Найти">
-
+			<p>
+			  <input type="submit" name="submit" value="Найти">
+            </p>
          </fieldset>
       </form>
 </section>
@@ -154,7 +159,6 @@
        	<ul>
     		<li> 
             <a class="social-button" href="https://twitter.com/search?q=sedona%20arizona&src=tyah"> Twitter </a> 
-            <!-- я знаю, что так стилизовать не модно -->
             <img src="img/common/twitter.svg" style="background-color: #b3d1e2">
             </li>
 
@@ -172,7 +176,6 @@
     <p>
     	Website by
     	<a href="https://htmlacademy.ru/intensive/htmlcss">
-        <!-- Тут должно быть SVG, но оно в макете почему-то белое(какой-то эффект наложения подключен)-->
         <img src="img/common/logo_html.svg" width="115" height="41" alt="Логотип htmlacademy"> 
     	</a>
     </p>
