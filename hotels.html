@@ -32,13 +32,13 @@
 </header>
 
 <main class="container">
-<!-- позже - в фон--->
-<img src="img/hotels/backgroundphoto.jpg" height="250" width="820">
 
 <section class="hotel options"> 
 
-<!-- Небольшая заготовка, прикинуть, насколько в верном ключе я набросал -->
 <form action="https://echo.htmlacademy.ru" method="get">
+
+<fieldset>
+  <legend class="visually-hidden"> Инфраструктура: </legend>
  <div>
   <ul>
     <li>
@@ -55,7 +55,10 @@
     </li>
   </ul>
  </div> 
+</fieldset>  
 
+<fieldset>
+  <legend class="visually-hidden"> Тип жилья: </legend>
  <div>
     <ul>
     <li>
@@ -72,14 +75,26 @@
     </li>
   </ul>
 </div>
+</fieldset>  
 
-<div>
-      <label for="cost"> Стоимость в сутки(р): </label>
-      <p>
-      от 0 <input type="range" name="cost" id="cost" min="0" max="3000" step="500"> до 3000
-      <input type="submit" name="show" value="Показать">
-      </p>
-</div>
+<fieldset>
+  <legend> Стоимость в сутки(р): </legend>
+   <div>
+    <span>от</span>
+       <label for="from-cost" class="visually-hidden"> <!-- Стоимость в сутки --> </label>
+       <input type="number" name="from-cost" id="from-cost"  step="500" value="0" placeholder="минимальная сумма в сутки">
+
+    <span>до</span>
+       <label for="to-cost" class="visually-hidden"> <!-- Стоимость в сутки -->  </label>
+       <input type="number" name="to-cost" id="to-cost" step="500" value="3000" placeholder="максимальная сумма в сутки"> 
+
+
+       <label for="costrange" class="visually-hidden"> <!-- Стоимость в сутки -->  </label>
+       <input type="range" name="costrange" id="costrange" min="0" max="3000" step="500">
+
+       <input type="submit" name="show" value="Показать">
+    </div>
+</fieldset> 
 
 </form>
 <!-- Результат работы формы ? -->
@@ -95,27 +110,27 @@
       <img src="img/hotels/amara.jpg" alt="общий вид гостиницы AMARA RESOR & SPA">
       <h2 class="hotel-name"> AMARA RESOR & SPA </h2>
       <p> Гостиница от 4000 р. </p> 
-      <p> <a href="amara-rs.html" style="background-color: #81b3d2"> Подробнее </a> </p>
-      <p> <a href="reservation.html" style="background-color: #a48c7c"> Забронировать </a> </p>
-      <p class="rating" style="background-color: #ccc7c7"> Рейтиг: 8.5 </p> 
+      <p> <a href="amara-rs.html"> Подробнее </a> </p>
+      <p> <a href="reservation.html"> Забронировать </a> </p>
+      <p class="rating"> Рейтиг: 8.5 </p> 
    </li>
 
     <li class="result">
       <img src="img/hotels/desert.jpg" alt="общий вид гостиницы DESERT QUAIl INN">
       <h2 class="hotel-name"> DESERT QUAIl INN </h2>
       <p> Мотель от 3000 р. </p>
-      <p> <a href="amara-rs.html" style="background-color: #81b3d2"> Подробнее </a> </p>
-      <p> <a href="reservation.html" style="background-color: #a48c7c"> Забронировать </a> </p>
-      <p class="rating" style="background-color: #ccc7c7"> Рейтиг: 8.9 </p>     
+      <p> <a href="amara-rs.html"> Подробнее </a> </p>
+      <p> <a href="reservation.html"> Забронировать </a> </p>
+      <p class="rating"> Рейтиг: 8.9 </p>     
     </li>
 
     <li class="result">
       <img src="img/hotels/villas.jpg" alt="общий вид гостиницы VILLAS AT POCO DIABLO">
       <h2 class="hotel-name"> VILLAS AT POCO DIABLO </h2>
       <p> Апартаменты от 2000 р. </p>
-      <p> <a href="amara-rs.html" style="background-color: #81b3d2"> Подробнее </a> </p>
-      <p> <a href="reservation.html" style="background-color: #a48c7c"> Забронировать </a> </p>
-      <p class="rating" style="background-color: #ccc7c7"> Рейтиг: 9.2 </p>
+      <p> <a href="amara-rs.html"> Подробнее </a> </p>
+      <p> <a href="reservation.html"> Забронировать </a> </p>
+      <p class="rating"> Рейтиг: 9.2 </p>
     </li>
   
   </ul>
@@ -133,17 +148,17 @@
       <ul>
             <li> 
             <a class="social-button" href="https://twitter.com/search?q=sedona%20arizona&src=tyah"> Twitter </a> 
-            <img src="img/common/twitter.svg" style="background-color: #b3d1e2">
+            <img src="img/common/twitter.svg" alt="Логотип Twitter">
             </li>
             
             <li> 
             <a class="social-button" href="https://www.facebook.com/VisitSedona/?ref=br_rs"> Facebook </a> 
-            <img src="img/common/fb.svg" style="background-color: #b3d1e2">
+            <img src="img/common/fb.svg" alt="Логотип Facebook">
             </li>
 
             <li>
             <a class="social-button" href="https://www.youtube.com/results?search_query=sedona+arizona"> Youtube </a> 
-            <img src="img/common/Youtube.svg" style="background-color: #b3d1e2">           
+            <img src="img/common/Youtube.svg" alt="Логотип Youtube">           
             </li>            
       </ul>
     </div>

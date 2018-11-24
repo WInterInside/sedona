@@ -29,8 +29,6 @@
 
 	</nav>
 
-<img src="img/index/backgroundphoto.jpg" height="520" width="1200">
-
 </header>
 
 <main class="container">
@@ -46,13 +44,13 @@
 
         <ul class="reasons-list">
 
-        	<li class="reasons-item-img" style="background-color: #81b3d2">
+        	<li class="reasons-item-img">
         		<h3> Настоящий городок </h3>
         		<p> — №1 —</p>
         		<p> Седона — не аттракцион для туристов, там течёт своя жизнь </p>
         		<img src="img/index/facade.jpg" alt="фасад мотеля">
 
-        			<ul style="background-color: white">
+        			<ul>
         				<li>
         				    <h3> Жильё </h3>        					
         					<p> Рекомендуем пожить в настоящем мотеле, всё как в кино! </p>
@@ -70,7 +68,7 @@
         			</ul>
         	</li>
 
-        	<li class="reasons-item-img" style="background-color: #81b3d2">
+        	<li class="reasons-item-img">
                 <img src="img/index/bridge.jpg" alt="devil's bridge photo">
         		<h3> Там есть Мост дьявола </h3 >
         		<p> — №2 — </p>
@@ -107,43 +105,50 @@
 
 <button class="modal-search">Поиск гостиницы в Седоне</button>
 
-<br> <!-- временный, надеюсь не убьешь -->
-<br> <!-- временный, надеюсь не убьешь -->
-
 	<form action="https://echo.htmlacademy.ru" method="post">
-		<fieldset>
-			<p>
+			
 				<div>
-					<label for="date-in"> Дата заезда </label>
-					<input type="date" name="date" id="date-in">
-				</div>
-            </p>
-
-			<p>
-				<div>			
-					<label for="date-out"> Дата выезда </label>
-					<input type="date" name="date" id="date-out">
-				</div>
-		    </p>
-
-            <p>
+					<label for="date-in">Дата заезда: </label>
+                    <input type="date" name="date-in" id="date-in">
+					<button type="button"> <img src="img/index/calendar.png" alt="Выберите дату заезда"> </button>
+                </div>
+           		
+				<div>                    			
+					<label for="date-out"> Дата выезда: </label>
+                    <input type="date" name="date-out" id="date-out"> 
+					<button type="button"> <img src="img/index/calendar.png" alt="Выберите дату отъезда"> </button>                 
+                 </div>
+		       <!--       
 				<div>
 					<label for="grown"> Взрослые </label>
-					<input type="number" name="grown" id="grown" min="0" max="100">
-					<label for="baby"> Дети </label>
-					<input type="number" name="baby" id="baby" min="0" max="100">
-				</div>
-			</p>
+                    <input type="button" for="grown" name="minus" value="-" placeholder="Уменьшить количество взрослых">
+					<input type="number" name="grown" id="grown" min="0" max="100" placeholder="Введите количество взрослых">
+                    <input type="button" for="grown" name="plus" value="+" placeholder="Увеличить количество взрослых">   
 
-			<p>
+					<label for="baby"> Дети </label>
+                    <input type="button" for="baby" name="minus" value="-"  placeholder="Уменьшить количество детей">     
+					<input type="number" name="baby" id="baby" min="0" max="100" placeholder="Введите количество детей">
+                    <input type="button" for="baby" name="plus" value="+" placeholder="Увеличить количество детей">   
+				</div>
+                -->
+
+                <div>
+                    <label for="grown"> Взрослые </label>
+                    <button class="minus" type="button"> <img src="img/index/-.png" alt="кнопка минус"> </button>
+                    <input type="number" name="grown" id="grown" min="0" max="100" placeholder="Введите количество взрослых" value="2">
+                    <button class="plus" type="button"> <img src="img/index/+.png" alt="кнопка плюс"> </button>    
+
+                    <label for="baby"> Дети </label>
+                    <button class="minus" type="button"> <img src="img/index/-.png" alt="кнопка минус"> </button>     
+                    <input type="number" name="baby" id="baby" min="0" max="100" placeholder="Введите количество детей" value="0">
+                    <button class="plus" type="button"> <img src="img/index/+.png" alt="кнопка плюс" > </button>  
+                </div>                
+			
 			  <input type="submit" name="submit" value="Найти">
-            </p>
-         </fieldset>
+     
+        
       </form>
 </section>
-
-<br> <!-- временный, надеюсь не убьешь -->
-<br> <!-- временный, надеюсь не убьешь -->
 
 		<img src="img/index/map.jpg" width="1000" height="500" alt="Карта города">
  </div>
@@ -156,20 +161,21 @@
 	</p>
     
     <div class="footer-social">
-       	<ul>
-    		<li> 
+      	<ul>
+            <li> 
             <a class="social-button" href="https://twitter.com/search?q=sedona%20arizona&src=tyah"> Twitter </a> 
-            <img src="img/common/twitter.svg" style="background-color: #b3d1e2">
+            <img src="img/common/twitter.svg" alt="Логотип Twitter">
+            </li>
+            
+            <li> 
+            <a class="social-button" href="https://www.facebook.com/VisitSedona/?ref=br_rs"> Facebook </a> 
+            <img src="img/common/fb.svg" alt="Логотип Facebook">
             </li>
 
-    		<li> <a class="social-button" href="https://www.facebook.com/VisitSedona/?ref=br_rs"> Facebook </a> 
-            <img src="img/common/fb.svg" style="background-color: #b3d1e2">
-            </li>
-
-    		<li>
+            <li>
             <a class="social-button" href="https://www.youtube.com/results?search_query=sedona+arizona"> Youtube </a> 
-            <img src="img/common/Youtube.svg" style="background-color: #b3d1e2">           
-            </li>
+            <img src="img/common/Youtube.svg" alt="Логотип Youtube">           
+            </li>  
     	</ul>
     </div>
 
