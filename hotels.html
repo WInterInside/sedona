@@ -38,7 +38,7 @@
 <form action="https://echo.htmlacademy.ru" method="get">
 
 <fieldset>
-  <legend class="visually-hidden"> Инфраструктура: </legend>
+  <legend> Инфраструктура: </legend>
  <div>
   <ul>
     <li>
@@ -58,7 +58,7 @@
 </fieldset>  
 
 <fieldset>
-  <legend class="visually-hidden"> Тип жилья: </legend>
+  <legend> Тип жилья: </legend>
  <div>
     <ul>
     <li>
@@ -81,13 +81,16 @@
   <legend> Стоимость в сутки(р): </legend>
    <div>
     <span>от</span>
+        <label class="visually-hidden" for="min-cost">Минимальная стоимость в сутки</label>
         <input type="number" name="min-cost" id="min-cost"  step="500" value="0" placeholder="минимальная сумма в сутки">
 
     <span>до</span>
+       <label class="visually-hidden" for="max-cost">Максимальная стоимость в сутки</label>
        <input type="number" name="max-cost" id="max-cost" step="500" value="3000" placeholder="максимальная сумма в сутки"> 
-       
-       <input type="range" name="costrange" id="costrange" min="0" max="3000" step="500">
 
+       <label class="visually-hidden" for="costrange">Диапазон стоимости в сутки</label>
+       <input type="range" name="costrange" id="costrange" min="0" max="3000" step="500">
+ 
        <input type="submit" name="show" value="Показать">
     </div>
 </fieldset> 
@@ -143,16 +146,16 @@
     <div class="footer-social">
       <ul>
             <li> 
-            <a class="social-button" href="https://twitter.com/search?q=sedona%20arizona&src=tyah"> город Седона в  Twitter </a>            
+            <a class="social-button" href="https://twitter.com/search?q=sedona%20arizona&src=tyah"> <span class="visually-hidden"> город Седона в Twitter </span></a> 
             </li>
             
             <li> 
-            <a class="social-button" href="https://www.facebook.com/VisitSedona/?ref=br_rs"> город Седона в Facebook </a>             
+            <a class="social-button" href="https://www.facebook.com/VisitSedona/?ref=br_rs"> <span class="visually-hidden"> город Седона в Facebook </span></a> 
             </li>
 
             <li>
-            <a class="social-button" href="https://www.youtube.com/results?search_query=sedona+arizona"> город Седона в Youtube </a>                     
-            </li>            
+            <a class="social-button" href="https://www.youtube.com/results?search_query=sedona+arizona"><span class="visually-hidden"> город Седона в Youtube </span> </a>                   
+            </li>             
       </ul>
     </div>
 
