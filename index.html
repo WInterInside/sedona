@@ -110,38 +110,25 @@
 				<div>
 					<label for="date-in">Дата заезда: </label>
                     <input type="date" name="date-in" id="date-in">
-					<button type="button"> <img src="img/index/calendar.png" alt="Выберите дату заезда"> </button>
+					<button type="button"> <img src="img/index/calendar.svg" alt="Выберите дату заезда"> </button>
                 </div>
            		
 				<div>                    			
 					<label for="date-out"> Дата выезда: </label>
                     <input type="date" name="date-out" id="date-out"> 
-					<button type="button"> <img src="img/index/calendar.png" alt="Выберите дату отъезда"> </button>                 
+					<button type="button"> <img src="img/index/calendar.svg"  alt="Выберите дату отъезда"> </button>                 
                  </div>
-		       <!--       
-				<div>
-					<label for="grown"> Взрослые </label>
-                    <input type="button" for="grown" name="minus" value="-" placeholder="Уменьшить количество взрослых">
-					<input type="number" name="grown" id="grown" min="0" max="100" placeholder="Введите количество взрослых">
-                    <input type="button" for="grown" name="plus" value="+" placeholder="Увеличить количество взрослых">   
-
-					<label for="baby"> Дети </label>
-                    <input type="button" for="baby" name="minus" value="-"  placeholder="Уменьшить количество детей">     
-					<input type="number" name="baby" id="baby" min="0" max="100" placeholder="Введите количество детей">
-                    <input type="button" for="baby" name="plus" value="+" placeholder="Увеличить количество детей">   
-				</div>
-                -->
-
+		 
                 <div>
                     <label for="grown"> Взрослые </label>
-                    <button class="minus" type="button"> <img src="img/index/-.png" alt="кнопка минус"> </button>
+                    <button class="minus" type="button" aria-label="кнопка уменьшения количества взрослых"> - </button>
                     <input type="number" name="grown" id="grown" min="0" max="100" placeholder="Введите количество взрослых" value="2">
-                    <button class="plus" type="button"> <img src="img/index/+.png" alt="кнопка плюс"> </button>    
+                    <button class="plus" type="button" aria-label="кнопка добавления количества взрослых"> + </button>    
 
                     <label for="baby"> Дети </label>
-                    <button class="minus" type="button"> <img src="img/index/-.png" alt="кнопка минус"> </button>     
+                    <button class="minus" type="button"  aria-label="кнопка уменьшения количества детей"> - </button>     
                     <input type="number" name="baby" id="baby" min="0" max="100" placeholder="Введите количество детей" value="0">
-                    <button class="plus" type="button"> <img src="img/index/+.png" alt="кнопка плюс" > </button>  
+                    <button class="plus" type="button" aria-label="кнопка добавления количества детей"> + </button>  
                 </div>                
 			
 			  <input type="submit" name="submit" value="Найти">
@@ -163,18 +150,15 @@
     <div class="footer-social">
       	<ul>
             <li> 
-            <a class="social-button" href="https://twitter.com/search?q=sedona%20arizona&src=tyah"> Twitter </a> 
-            <img src="img/common/twitter.svg" alt="Логотип Twitter">
+            <a class="social-button" href="https://twitter.com/search?q=sedona%20arizona&src=tyah"> город Седона в Twitter </a> 
             </li>
             
             <li> 
-            <a class="social-button" href="https://www.facebook.com/VisitSedona/?ref=br_rs"> Facebook </a> 
-            <img src="img/common/fb.svg" alt="Логотип Facebook">
+            <a class="social-button" href="https://www.facebook.com/VisitSedona/?ref=br_rs"> город Седона в Facebook </a> 
             </li>
 
             <li>
-            <a class="social-button" href="https://www.youtube.com/results?search_query=sedona+arizona"> Youtube </a> 
-            <img src="img/common/Youtube.svg" alt="Логотип Youtube">           
+            <a class="social-button" href="https://www.youtube.com/results?search_query=sedona+arizona"> город Седона в Youtube </a>                   
             </li>  
     	</ul>
     </div>
