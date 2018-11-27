@@ -87,7 +87,7 @@
        <label for="max-cost"> До </label>
        <input type="number" name="max-cost" id="max-cost" step="500" value="3000" placeholder="максимальная сумма в сутки"> 
 
-       <label class="visually-hidden" for="costrange">Диапазон стоимости в сутки</label>
+       <label class="visually-hidden" for="costrange"> Диапазон стоимости в сутки </label>
        <input type="range" name="costrange" id="costrange" min="0" max="3000" step="500">
  
        <input type="submit" name="show" value="Показать">
@@ -95,7 +95,21 @@
 </fieldset> 
 
 </form>
-<!-- Результат работы формы ? -->
+<!-- Результат работы формы, css-заготовка для стрелок есть.  -->
+<div class="search-rezult">
+
+  <h2> Найдено: </h2>
+  <span> 3 </span>
+
+  <a class="result-link" href="#"> По цене </a>
+  <a class="result-link" href="#"> По типу </a>
+  <a class="result-link" href="#"> По рейтингу </a> 
+
+  <a class="up-arrow" href="#"> Вверх </a>
+  <a class="down-arrow" href="#"> Вниз </a>
+
+</div>
+
 </section>
 
 <section class="searching results">

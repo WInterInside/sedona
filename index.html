@@ -102,31 +102,31 @@
 
 <section class="modal modal-search">
 
-<button class="modal-search">Поиск гостиницы в Седоне</button>
+<button class="modal-search"> Поиск гостиницы в Седоне </button>
 
 	<form action="https://echo.htmlacademy.ru" method="post">
 			
-				<div>
-					<label for="date-in">Дата заезда: </label>
-                    <input type="date" name="date-in" id="date-in">
+				<div class="date picker">
+					<label for="date-in"> Дата заезда: </label>
+                    <input type="text" name="date-in" id="date-in" placeholder="24 апреля 2017">
 					<button class="calendar" type="button" aria-label="Выберите дату заезда"></button>
                 </div>
            		
-				<div>                    			
+				<div class="date picker">                    			
 					<label for="date-out"> Дата выезда: </label>
-                    <input type="date" name="date-out" id="date-out"> 
+                    <input type="text" name="date-out" id="date-out" placeholder="4 июля 2017"> 
 					<button class="calendar" type="button" aria-label="Выберите дату заезда"></button>                 
                  </div>
 		 
-                <div>
+                <div class="number-o-guests">
                     <label for="grown"> Взрослые </label>
                     <button class="minus" type="button" aria-label="кнопка уменьшения количества взрослых"> - </button>
-                    <input type="number" name="grown" id="grown" min="0" max="100" placeholder="Введите количество взрослых" value="2">
+                    <input type="text" name="grown" id="grown" min="0" max="100" placeholder="2">
                     <button class="plus" type="button" aria-label="кнопка добавления количества взрослых"> + </button>    
 
                     <label for="baby"> Дети </label>
                     <button class="minus" type="button"  aria-label="кнопка уменьшения количества детей"> - </button>     
-                    <input type="number" name="baby" id="baby" min="0" max="100" placeholder="Введите количество детей" value="0">
+                    <input type="text" name="baby" id="baby" min="0" max="100" placeholder="0">
                     <button class="plus" type="button" aria-label="кнопка добавления количества детей"> + </button>  
                 </div>                
 			
