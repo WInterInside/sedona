@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <title> HTML Academy: Седона </title>
     <base target="_blank">
-    <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
-  <body>
+  <body class="hotels-page">
 
   	<!-- 
     <p> Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss"> HTML и CSS, уровень 1 </a>». </p>
@@ -21,7 +22,7 @@
   </a>
     
 		<ul class="site-navigation">
-      <li> <a href="info.html"> Информация</a> </li>
+      <li> <a href="info.html"> Информация </a> </li>
       <li> <a href="https://www.google.com/maps/place/%D0%90%D1%80%D0%B8%D0%B7%D0%BE%D0%BD%D0%B0/@34.3112788,-111.9708147,7.5z/data=!4m5!3m4!1s0x872b08ebcb4c186b:0x423927b17fc1cd71!8m2!3d34.0489281!4d-111.0937311"> Карта штата </a> </li>
       <li> <a href="gallery.html"> Фото и видео </a> </li>
       <li> <a href="hotels.html"> Гостиницы </a> </li>
@@ -31,7 +32,7 @@
 
 </header>
 
-<main class="container">
+<main class="container-hotels">
 
 <section class="hotel options"> 
 
@@ -112,7 +113,7 @@
 
 </section>
 
-<section class="searching results">
+<section class="searching-results">
 
   <h1 class="visually-hidden"> Результаты поиска гостиниц </h1>
 
@@ -120,28 +121,28 @@
 
     <li class="result">
       <img src="img/hotels/amara.jpg" alt="общий вид гостиницы AMARA RESOR & SPA">
-      <h2 class="hotel-name"> AMARA RESOR & SPA </h2>
+      <p> <a class="hotel-name" href="amara-rs.html"> AMARA RESOR & SPA </a> </p> 
       <p> Гостиница от 4000 р. </p> 
-      <p> <a href="amara-rs.html"> Подробнее </a> </p>
-      <p> <a href="reservation.html"> Забронировать </a> </p>
+      <p> <a class="more" href="amara-rs.html"> Подробнее </a> </p>
+      <p> <a class="to-book" href="reservation.html"> Забронировать </a> </p>
       <p class="rating"> Рейтиг: 8.5 </p> 
    </li>
 
     <li class="result">
       <img src="img/hotels/desert.jpg" alt="общий вид гостиницы DESERT QUAIl INN">
-      <h2 class="hotel-name"> DESERT QUAIl INN </h2>
+      <p> <a class="hotel-name" href="desert-qi.html"> DESERT QUAIl INN </a> <p>
       <p> Мотель от 3000 р. </p>
-      <p> <a href="amara-rs.html"> Подробнее </a> </p>
-      <p> <a href="reservation.html"> Забронировать </a> </p>
+      <p> <a class="more" href="desert-qi.html"> Подробнее </a> </p>
+      <p> <a class="to-book" href="reservation.html"> Забронировать </a> </p>
       <p class="rating"> Рейтиг: 8.9 </p>     
     </li>
 
     <li class="result">
       <img src="img/hotels/villas.jpg" alt="общий вид гостиницы VILLAS AT POCO DIABLO">
-      <h2 class="hotel-name"> VILLAS AT POCO DIABLO </h2>
+      <p> <a class="hotel-name" href="villas-apd.html"> VILLAS AT POCO DIABLO </a> </p>
       <p> Апартаменты от 2000 р. </p>
-      <p> <a href="amara-rs.html"> Подробнее </a> </p>
-      <p> <a href="reservation.html"> Забронировать </a> </p>
+      <p> <a class="more" href="villas-apd.html"> Подробнее </a> </p>
+      <p> <a class="to-book" href="reservation.html"> Забронировать </a> </p>
       <p class="rating"> Рейтиг: 9.2 </p>
     </li>
   
@@ -153,33 +154,37 @@
 
 <footer class="main-footer">
   <p>
-    #visitSEDONA 
+    #visitSEDONA
   </p>
     
     <div class="footer-social">
-      <ul>
+        <ul class="social-list">
+
             <li> 
-            <a class="social-button" href="https://twitter.com/search?q=sedona%20arizona&src=tyah"> <span class="visually-hidden"> город Седона в Twitter </span></a> 
+            <a class="social-button-t" href="https://twitter.com/search?q=sedona%20arizona&src=tyah"> <!-- <span class="visually-hidden"> город Седона в -->  Twitter <!--</span> --></a> 
             </li>
             
             <li> 
-            <a class="social-button" href="https://www.facebook.com/VisitSedona/?ref=br_rs"> <span class="visually-hidden"> город Седона в Facebook </span></a> 
+            <a class="social-button-f" href="https://www.facebook.com/VisitSedona/?ref=br_rs"> <!-- <span class="visually-hidden"> город Седона в -->  Facebook  <!--</span> --></a> 
             </li>
 
             <li>
-            <a class="social-button" href="https://www.youtube.com/results?search_query=sedona+arizona"><span class="visually-hidden"> город Седона в Youtube </span> </a>                   
-            </li>             
+            <a class="social-button-y" href="https://www.youtube.com/results?search_query=sedona+arizona"><!-- <span class="visually-hidden">город Седона в  --> Youtube <!--</span> --> </a>       
+            </li>   
+
       </ul>
     </div>
 
-    <p>
-      Website by
+    <div class="webstudio">
+      <span>Website by</span>
       <a href="https://htmlacademy.ru/intensive/htmlcss">
-      <img src="img/common/logo_html.svg" width="115" height="41" alt="Логотип htmlacademy"> 
+        <img src="img/common/logo_html.svg" width="115" height="41" alt="Логотип htmlacademy"> 
       </a>
-    </p>
-
+    </div>
 
 </footer>
+  </body>
+</html>
+
   </body>
 </html>
