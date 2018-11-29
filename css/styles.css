@@ -1,30 +1,31 @@
-*,
-*::before,
-*after {
+  *, 
+  *::before, 
+  *::after {
     box-sizing: inherit;
-}
+  }
 
-html {
+  html {
     box-sizing: border-box;
-}
+  }
+
+  .content-box-component {
+    box-sizing: content-box;
+  }
 
 body {
     margin: 0;
     padding: 0;	
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans', 'Open Sans', sans-serif;
     text-transform: uppercase;
     line-height: 21px;
     font-size: 14px;
     color: #333333;
     background-color: #ffffff;
+    list-style: none;
 }
 
 a {
     text-decoration: none;	
-}
-
-li {
-	display: inline;
 }
 
 .visually-hidden {
@@ -51,21 +52,26 @@ li {
 }
 
 
-ul.site-navigation li{
+ul.site-navigation li {
   display: inline;
   margin-right: 73px;
   margin-left: 73px;
+  list-style: none;
+
 }
 
 .site-navigation a {
     color: #000000;
 }
 
+.site-navigation a:focus{
+}
+
 .site-navigation a:hover {
     color: #81b3d2;
 }
 
-.site-navigation a:focus {
+.site-navigation a:active {
     color: rgba(0, 0, 0, 0.3);
 }
 
@@ -90,11 +96,15 @@ ul.site-navigation li{
     line-height: 26px;
 }
 
+.reasons li {
+	list-style: none;
+}
+
 .modal-search {
 	line-height: 24px;
 }
 
-.modal-search span{
+.modal-search span {
     color: #000000;
     background-color: #ffffff;
     font-size: 30px;
@@ -102,7 +112,7 @@ ul.site-navigation li{
     font-weight: bold;
 }
 
-button.modal-search{
+button.modal-search {
 	border:0px;
 	width: 570px;
 	height: 86px;
@@ -112,23 +122,28 @@ button.modal-search{
     line-height: 26px;
     font-weight: bold;
     text-align: center;
+    text-transform: uppercase;
 }
 
-button.modal-search:hover{
+button.modal-search:hover {
 	background-color: #604e43;
 }
 
-button.modal-search:focus{
+button.modal-search:active {
 	background-color: #503e33;
 	color: rgba(255, 255, 255, 0.3);
 }
 
+button.modal-search:focus {
+}
+
 .date-picker label,
-.number-o-guests label{
+.number-o-guests label {
 	font-weight: bold;
 	font-size: 14px;
     line-height: 26px;
     padding-right: 15px;
+    color: #000000;
 }
 
 .date-picker input,
@@ -138,30 +153,30 @@ button.modal-search:focus{
     height: 38px;
 }
 
-.number-o-guests input{
+.number-o-guests input {
 	width: 38px;
 	text-align: center;
 	padding-left: 38px;
 }
 
-.date-picker input{
+.date-picker input {
     padding-left: 10px;
     padding-right: 38px: 
 }
 
-.date-picker input:focus {
+.date-picker input:active {
     background-color: #ffffff;
     border: 2px;
     border-color: #f6f6f6;
     outline: none;
 }
 
-.date-picker div,
-.number-o-guests div {
+.date-picker,
+.number-o-guests{
 	position: relative;
 }
 
-.date-picker button{
+.date-picker button {
 	background-image: url(../img/index/calendar.svg);
 	background-repeat: no-repeat;
 	background-size: 28px 28px;
@@ -169,12 +184,12 @@ button.modal-search:focus{
 	position: absolute;
 }
 
-.number-o-guests button{
+.number-o-guests button {
 	position: absolute;
 }
 
 .date-picker button,
-.number-o-guests button{
+.number-o-guests button {
 	width: 38px;
 	height: 38px;
 	border: 0;
@@ -187,7 +202,7 @@ button.modal-search:focus{
     height: 58px;
     font-weight: bold;
     font-size: 21px;
-    line-height: auto;
+    text-transform: uppercase;
     color: rgba(255, 255, 255, 1);
     background-color: #97c0da;
 }
@@ -195,9 +210,13 @@ button.modal-search:focus{
 .index-submit:hover {
     background-color: #69a0c1;
 }
-.index-submit:focus {
+
+.index-submit:active {
     color: rgba(255, 255, 255, 0.3);
     background-color: #72a9c9;
+}
+
+.index-submit:focus {
 }
 
 .main-footer {
@@ -214,7 +233,11 @@ button.modal-search:focus{
 	padding-left: 300px;
 }
 
-.social-list a{
+.social-list li{
+   list-style: none;
+}
+
+.social-list a {
     display: inline;
     margin-right: 5px;
     margin-left: 5px;
@@ -224,11 +247,14 @@ button.modal-search:focus{
     height: 38px;
 }
 
+.social-list a:focus {
+}
+
 .social-list a:hover {
    background-color: #8eb7d1;
 }
 
-.social-list a:focus {
+.social-list a:active {
    background-color: #8eb7d1;
    color: rgba(255, 255, 255, 0.5);
 }
@@ -243,7 +269,11 @@ button.modal-search:focus{
 
 /* Hotels */
 
-a.hotel-name  {
+.hotels-page li {
+	list-style: none;
+}
+
+.hotel-name {
 	color: rgba(0, 0, 0, 1);
     background-color: #ffffff;
     font-size: 21px;
@@ -251,15 +281,18 @@ a.hotel-name  {
     font-weight: bold;
 }
 
-a.hotel-name:hover {
+.hotel-name:focus {
+}
+
+.hotel-name:hover {
 	color: #8eb7d1;
 }
 
-a.hotel-name:focus {
+.hotel-name:active {
 	color: rgba(0, 0, 0, 0.3);
 }
 
-a.more {
+.more {
 	color: rgba(255, 255, 255, 1);
 	line-height: 21px;
     font-size: 14px;
@@ -267,15 +300,18 @@ a.more {
     background-color: #81b3d2;
 }
 
-a.more:hover {
+.more:focus {
+}
+
+.more:hover {
 	background-color: #669ec0;
 }
 
-a.more:focus {
+.more:active {
 	color: rgba(255, 255, 255, 0.3);
 }
 
-a.to-book {
+.to-book {
 	color: rgba(255, 255, 255, 1);
 	line-height: 21px;
     font-size: 14px;
@@ -283,17 +319,25 @@ a.to-book {
     background-color: #766357;
 }
 
-a.to-book:hover {
+.tp-bool:focus {
+}
+
+.to-book:hover {
 	background-color: #604e43;
 }
 
-a.to-book:focus {
+.to-book:active {
 	color: rgba(255, 255, 255, 0.3);
 }
 
 .rating {
 	width: 110px;
 	height: 27px;
+	color: #666666;
 	background-color: #f2f2f2;
 	text-align: center;
+}
+
+.current {
+	color: #766357;
 }
