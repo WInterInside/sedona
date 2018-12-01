@@ -15,7 +15,7 @@
 body {
     margin: 0;
     padding: 0;	
-    font-family: 'PT Sans', 'Open Sans', sans-serif;
+    font-family: 'PT Sans', 'Arial', sans-serif;
     text-transform: uppercase;
     line-height: 21px;
     font-size: 14px;
@@ -269,6 +269,10 @@ button.modal-search:focus {
 
 /* Hotels */
 
+a.current {
+	color: #766357;
+}
+
 .hotels-page li {
 	list-style: none;
 }
@@ -338,6 +342,3 @@ button.modal-search:focus {
 	text-align: center;
 }
 
-.current {
-	color: #766357;
-}
