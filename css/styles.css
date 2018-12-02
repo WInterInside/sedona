@@ -52,12 +52,15 @@ a {
 }
 
 
-ul.site-navigation li {
+ul.site-navigation li { 
   display: inline;
-  margin-right: 73px;
-  margin-left: 73px;
+  margin-right: 70px;
+  margin-left: 70px;
   list-style: none;
-
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-top: 0px;
+  padding-bottom: 0px; 
 }
 
 .site-navigation a {
@@ -233,7 +236,7 @@ button.modal-search:focus {
 	padding-left: 300px;
 }
 
-.social-list li{
+.social-list li {
    list-style: none;
 }
 
@@ -265,7 +268,7 @@ button.modal-search:focus {
 	font-size: 14px;
     line-height: 26px;
     font-weight: normal;
-   }
+}
 
 /* Hotels */
 
@@ -342,3 +345,116 @@ a.current {
 	text-align: center;
 }
 
+/* сетка */
+
+/*header*/
+
+html,
+body {
+  min-width: 1122px;
+  min-height: 1750px;
+}
+
+
+.main-header {
+	outline: 5px solid green;
+	min-height: 72px;
+}
+
+.main-header-logo {
+	width: 142px;
+	height: 72px;
+	margin: 0;
+	order: 2;
+}
+
+.main-navigation {
+	background-color: transparent;
+	min-height: 56px;
+	padding: 0px;
+	margin: 0px;
+	display: flex;
+	align-items: center;
+}
+
+.site-navigation {
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+	height: 56px;
+	min-width: 1200px;
+}
+
+ul.site-navigation li:nth-child(1), 
+ul.site-navigation li:nth-child(2) {
+	text-align: : flex-start;
+}
+
+ul.site-navigation li:nth-child(3), 
+ul.site-navigation li:nth-child(4) {
+	text-align: : flex-end;
+	margin-right: auto;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+    outline: 5px solid cyan;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*main*/
+.container-index {
+	outline: 5px solid yellow;
+}
+
+/*foter*/
+.main-footer  {
+	outline: 5px solid red;
+	height: 120px;
+	width: 1200px;
+	padding: 20px;
+}
+
+.hashtag-sedona {
+	width: 400px;
+	height: 120px;
+	margin: 0px;
+}
+
+.footer-social {
+	width: 400px;
+	height: 120px;
+	margin: 0px;
+}
+
+.webstudio {
+	width: 400px;
+	height: 120px;
+	margin: 0px
+}
+
+
+/*hotels*/
+
+
+.results-hotels {
+	width: 1200;
+	display: flex;
+	outline: 2px solid pink;
+	flex-direction: column;
+}
+
+
+.result {
+	width: 900px;
+	display: flex;
+	flex-direction: row;
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+	outline: 2px dashed gray;
+}
