@@ -178,7 +178,7 @@ button.modal-search:focus {
 }
 
 .date-picker,
-.number-o-guests{
+.number-o-guests {
 	position: relative;
 }
 
@@ -349,9 +349,10 @@ body {
  }
 
 .container {
-	min-width: 1200px;
-	margin: 0 auto;
+    width: 1200px;
+    margin: 0 auto;
 }
+
 
 .main-header {
 	outline: 5px solid green;
@@ -382,12 +383,6 @@ ul.site-navigation li {
 
 ul.site-navigation li:nth-child(2) {
 	margin-right:  auto;
-
-}
-
-.container {
-    width: 1200px;
-    margin: 0 auto;
 }
 
 /*main*/
@@ -399,25 +394,25 @@ ul.site-navigation li:nth-child(2) {
 .main-footer  {
 	display: flex;
 	outline: 5px solid red;
-	min-height: 120px;
-	min-width: 1200px;
+	height: 120px;
+	width: 1200px;
 }
 
 .hashtag-sedona {
-	min-width: 400px;
-	min-height: 120px;
+	width: 400px;
+	height: 120px;
 	text-align: center;
 }
 
 .footer-social {
-	min-width: 400px;
-	min-height: 120px;
+	width: 400px;
+	height: 120px;
 	text-align: center;	
 }
 
 .webstudio {
-	min-width: 400px;
-	min-height: 120px;
+	width: 400px;
+	height: 120px;
 	text-align: center;
 }
 
@@ -433,11 +428,9 @@ ul.site-navigation li:nth-child(2) {
 	outline: 2px solid pink;
 }
 
-.results-hotels ul{
+.results-hotels ul {
     margin: 0;
 }
-
-
 
 .result {
 	display: flex;
@@ -449,21 +442,29 @@ ul.site-navigation li:nth-child(2) {
     margin-top: auto;
     margin-bottom: auto;
 }
+
 .result-content {
     margin-left: 30px;
 }
-
 
 .search-rezult {
 	display: flex;
 }
 
 .hotel-rating {
-	background-image: url(../img/hotels/star.svg);
+    margin-left: auto;
+    text-align: end;
+}
+
+.hotel-rating p {
+    background-color: gray;
+}
+
+.hotel-rating span {
+    background-image: url(../img/hotels/star.svg);
 	background-repeat: repeat-x;
-	margin-left: auto;
-    margin-top: auto;
-    margin-bottom: auto;
+    color: white;
+    
 }
 
 .hotel-options-check {
