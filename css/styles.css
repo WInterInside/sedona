@@ -40,6 +40,7 @@ a {
 }
 
 .container-index {
+    margin-top: -15px;
     text-align: center;	
 }
 
@@ -66,7 +67,7 @@ ul.site-navigation li {
     color: #000000;
 }
 
-.site-navigation a:focus{
+.site-navigation a:focus {
 }
 
 .site-navigation a:hover {
@@ -225,9 +226,13 @@ button.modal-search:focus {
 .index-submit:focus {
 }
 
+.index-map {
+
+}
+
 .main-footer {
     color: #000000;
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.9);
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
@@ -242,21 +247,22 @@ button.modal-search:focus {
    list-style: none;
 }
 
-.social-list a {
+.social-button {
+    display: block;
     background-color: #adcddf;
     color: rgba(255, 255, 255, 1);
-    width: 38px;
-    height: 38px;
+    width: 46px;
+    height: 48px;
 }
 
-.social-list a:focus {
+.social-button:focus {
 }
 
-.social-list a:hover {
+.social-button:hover {
    background-color: #8eb7d1;
 }
 
-.social-list a:active {
+.social-button:active {
    background-color: #8eb7d1;
    color: rgba(255, 255, 255, 0.5);
 }
@@ -264,10 +270,14 @@ button.modal-search:focus {
 .webstudio {
 	font-size: 14px;
     line-height: 26px;
-    padding-top: 20px; /*временный*/
 }
 
 /* Hotels */
+
+.container-hotels {
+    margin-right: 73px;
+    margin-left:  73px
+}
 
 a.current {
 	color: #766357;
@@ -345,7 +355,7 @@ a.current {
 
 html,
 body {
-  min-width: 1200px;
+    min-width: 1200px;
  }
 
 .container {
@@ -355,11 +365,14 @@ body {
 
 
 .main-header {
-	outline: 5px solid green;
 	min-height: 72px;
 }
 
 .main-header-logo {
+    position: absolute;
+    top: -1px;
+    left: 600px;
+    right: 600px;
 }
 
 .main-navigation {
@@ -369,7 +382,7 @@ body {
 }
 
 .site-navigation {
-	padding: 0px;
+	padding: 15px 0px 15px 0px;
 	margin: 0px;
 	list-style: none;
 	min-height: 56px;
@@ -387,35 +400,77 @@ ul.site-navigation li:nth-child(2) {
 
 /*main*/
 .container-index {
-	outline: 5px solid yellow;
 }
 
 /*foter*/
-.main-footer  {
+.main-footer {
+    background-color: white;
 	display: flex;
-	outline: 5px solid red;
 	height: 120px;
 	width: 1200px;
 }
 
 .hashtag-sedona {
 	width: 400px;
-	height: 120px;
-	text-align: center;
+	min-height: 120px;
 }
 
-.footer-social {
-	width: 400px;
-	height: 120px;
-	text-align: center;	
+.hashtag-sedona p {
+    margin-top: 50px; 
+}
+
+
+.social-list {
+    width: 400px;
+    min-height: 120px;
+    padding: 0;
+    margin: 0;
+}
+
+.tw {
+   background-image: url(../img/common/t.svg);
+   background-repeat: no-repeat;
+   background-position: 50% 50%;
+}
+
+.fb {
+   background-image: url(../img/common/fb.svg);
+   background-repeat: no-repeat;
+   background-position: 50% 50%;
+}
+
+.youtube {
+   background-image: url(../img/common/youtube.svg);
+   background-repeat: no-repeat;
+   background-position: 50% 50%;
+}
+
+.social-list li {
+    margin-top: 36px; 
+    display: inline-block;
+    width: 46px;
+    height: 48px;
+    background-color: #81b3d2;
 }
 
 .webstudio {
+    display: flex;
 	width: 400px;
-	height: 120px;
-	text-align: center;
+	min-height: 120px;
 }
 
+.webstudio span {
+    display: inline-block;
+    margin-top: 46px;
+    margin-left: auto;
+    margin-right: 6px;
+}
+
+.webstudio a {
+    display: inline-block;
+    margin-top: 39px;
+    margin-right: auto;
+}
 
 /*hotels*/
 
@@ -453,19 +508,34 @@ ul.site-navigation li:nth-child(2) {
 
 .hotel-rating {
     margin-left: auto;
-    text-align: end;
+    text-align: right;
 }
 
 .hotel-rating p {
-    background-color: gray;
+    background-color: #f2f2f2;
 }
 
-.hotel-rating span {
+.for-stars {
     background-image: url(../img/hotels/star.svg);
 	background-repeat: repeat-x;
-    color: white;
-    
+    margin-top: 20px;
+    margin-left: auto;
+    height: 20px;
 }
+
+/* Звездность отеля */
+.four-stars {
+    width: 68px;
+}
+
+.two-stars {
+    width: 37px;
+}
+
+.three-stars {
+    width: 52px;
+}
+/* _________________ */
 
 .hotel-options-check {
 	display: flex;
