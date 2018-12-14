@@ -87,7 +87,11 @@ ul.site-navigation li {
     background-repeat: no-repeat;
 }
 
-.container-index {
+
+
+.container-index h2 {
+    padding-left: 380px;
+    padding-right: 380px;
 }
 
 .container-index h1 {
@@ -227,16 +231,23 @@ button.modal-search:focus {
 }
 
 .index-map {
+    margin-bottom: -126px;
 
 }
 
 .main-footer {
     color: #000000;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 1);
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
     text-align: center;	
+}
+
+.footer-index {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .main-footer p {
@@ -249,7 +260,7 @@ button.modal-search:focus {
 
 .social-button {
     display: block;
-    background-color: #adcddf;
+    background-color: #81b3d2;
     color: rgba(255, 255, 255, 1);
     width: 46px;
     height: 48px;
@@ -361,6 +372,8 @@ body {
 .container {
     width: 1200px;
     margin: 0 auto;
+    box-shadow:  0 0 10px rgba(0,0,0,0.4);
+    overflow: hidden;
 }
 
 
@@ -404,7 +417,6 @@ ul.site-navigation li:nth-child(2) {
 
 /*foter*/
 .main-footer {
-    background-color: white;
 	display: flex;
 	height: 120px;
 	width: 1200px;
