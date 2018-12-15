@@ -75,6 +75,7 @@ ul.site-navigation li {
 }
 
 .site-navigation a:hover {
+    transition: 0.4s; 
     color: #81b3d2;
 }
 
@@ -148,7 +149,7 @@ button.modal-search:hover {
 	background-color: #604e43;
 }
 
-button.modal-search:active {
+button.modal-search:active {    
 	background-color: #503e33;
 	color: rgba(255, 255, 255, 0.3);
 }
@@ -162,6 +163,18 @@ button.modal-search:active {
     background-color: #ffffff;
 }
 
+/*cтилизация плейсхолдера*/
+input::-webkit-input-placeholder {    
+    line-height: 26px;
+    font-weight: bold;
+    color: #000000;
+}
+input:-moz-placeholder {    
+    line-height: 26px;
+    font-weight: bold;
+    color: #000000;
+}
+/*-------------------*/
 .date-picker input[type="text"] {
     box-sizing: border-box;
     width: 345px;
@@ -242,12 +255,24 @@ button.modal-search:active {
 }
 
 .date-picker button {
-	background-image: url(../img/index/calendar.svg);
 	background-repeat: no-repeat;
-	background-size: 23px 23px;
+	background-size: 22px 22px;
 	background-position: 50%;
 	position: absolute;
     right: 10px;
+}
+
+.date-picker button svg {
+    fill: #cacaca;
+}
+
+.date-picker button:hover svg {
+    fill: #000000;
+    transition: 0.4s; 
+}
+
+.date-picker button:active svg {
+    fill: #81b3d2;
 }
 
 .date-picker button,
@@ -261,7 +286,7 @@ button.modal-search:active {
 
 .minus-g {
     position: absolute;
-    left: 120px;
+    left: 115px;
 }
 
 .plus-g {
@@ -272,7 +297,7 @@ button.modal-search:active {
 
 .minus-b {
     position: absolute;
-    left: 70px;
+    left: 67px;
 }
 
 .plus-b {
@@ -284,7 +309,7 @@ button.modal-search:active {
     display: flex;
     justify-content: space-between;
     min-height: 38px;
-        margin-bottom: 35px;
+    margin-bottom: 25px;
 
 }
 .index-submit {
