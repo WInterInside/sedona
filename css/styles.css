@@ -289,7 +289,7 @@ input:-ms-input-placeholder {
     padding-right: 15px;
 }
 .number-o-guests-b label {
-    padding-left: 50px;
+    padding-left: 45px;
 }
 
 .date-picker input,
@@ -386,7 +386,7 @@ height: 3px;
 width: 11px;
 background: #a9a9a9;
 position: absolute; 
-right: 10px; 
+right: 12px; 
 top: 17px;
 }
 
@@ -396,7 +396,7 @@ height: 3px;
 width: 11px;
 background: #a9a9a9;
 position: absolute; 
-right: 10px; 
+right: 12px; 
 top: 17px;
 }
 
@@ -406,18 +406,19 @@ height: 3px;
 width: 11px;
 background: #a9a9a9;
 position: absolute; 
-right: 10px; 
+right: 12px; 
 top: 17px;
 transform: rotate(90deg);
 }
+/*________________________________*/
 
-/**/
 .number-of-guests {
     display: flex;
     justify-content: space-between;
     min-height: 38px;
     margin-bottom: 25px;
 }
+
 .index-submit {
 	border: 0px;
     width: 458px;
@@ -560,7 +561,10 @@ a.current {
 	line-height: 21px;
     font-size: 14px;
     font-weight: bold;
+    text-align: center;
+    padding-top: 3px;
     background-color: #81b3d2;
+    min-width: 110px;
 }
 
 .more:focus {
@@ -579,7 +583,18 @@ a.current {
 	line-height: 21px;
     font-size: 14px;
     font-weight: bold;
+    text-align: center;
+    padding-top: 3px;
     background-color: #766357;
+    min-width: 142px;
+  }
+
+.button {
+    display: inline-block;
+    height: 27px;
+    margin-right: 3px;
+    padding-left: 17px;
+    padding-right: 17px;
 }
 
 .tp-bool:focus {
@@ -594,6 +609,7 @@ a.current {
 }
 
 .rating {
+    height: 92px;
 	color: #666666;
 	background-color: #f2f2f2;
 }
@@ -668,15 +684,20 @@ a.current {
 }
 
 .results-hotels {
-	outline: 2px solid pink;
+    display: flex;
+    justify-content: space-between;
 }
 
 .results-hotels ul {
     margin: 0;
+    padding: 0;
 }
 
 .result {
 	display: flex;
+    justify-content: space-between;
+    min-height: 150px;
+    width: 1056px;
     border-top: 1px solid #e5e5e5;
     border-bottom: 1px solid #e5e5e5;
 }
@@ -687,7 +708,21 @@ a.current {
 }
 
 .result-content {
+    margin-top: 20px;
     margin-left: 30px;
+    margin-right: auto;
+    height: 92px;
+}
+
+.result-content h2,
+.result-content p {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 11px;
+    padding-right: 5px;
+}
+
+.result-content h2{
 }
 
 .search-rezult {
@@ -697,32 +732,48 @@ a.current {
 .hotel-rating {
     margin-left: auto;
     text-align: right;
+    margin-top: 25px;
+  }
+
+.class-and-cost {
+    display: flex;
+    justify-content: space-between;
+    height: 12px;
+    min-width: 180px;
+    padding-bottom: 32px;
+    padding-right: 75px;
 }
 
 .hotel-rating p {
+    min-height: 28px;
+    min-width: 111px;
     background-color: #f2f2f2;
+    text-align: center;
+    margin: 0;
+    padding-top: 4px;
 }
 
 .for-stars {
     background-image: url(../img/hotels/star.svg);
-	background-repeat: repeat-x;
-    margin-top: 20px;
+	background-repeat: space;
     margin-left: auto;
-    height: 20px;
-}
+    height: 17px;
+    margin-bottom: 47px;
+ }
 
 /* Звездность отеля */
-.four-stars {
-    width: 68px;
-}
-
 .two-stars {
-    width: 37px;
+    width: 41px;
 }
 
 .three-stars {
-    width: 52px;
+    width: 66px;
 }
+
+.four-stars {
+    width: 89px;
+}
+
 /* _________________ */
 
 .hotel-options-check {
