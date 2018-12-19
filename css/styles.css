@@ -135,11 +135,11 @@ ul.site-navigation li {
 .welcome {
 	padding-top:76px;
 	width: 1200px;
-	height: 564px;
+	height: 509px;
     background-image: url("../img/index/backgroundphoto.jpg");
+    background-color: #263b41;
     background-repeat: no-repeat;
     background-position: 0 -55px;
-    margin-bottom: 5px;
 }
 
 .container-index h1 {
@@ -217,8 +217,6 @@ button.modal-search:active {
     background-color: #ffffff;
 }
 
-
-
 /*cтилизация плейсхолдера*/
 input::-webkit-input-placeholder {  
     line-height: 26px;
@@ -243,6 +241,12 @@ input:-ms-input-placeholder {
     font-weight: bold;
     color: #000000; 
 }
+
+input:input-placeholder {     
+    line-height: 26px;
+    font-weight: bold;
+    color: #000000; 
+}
 /*-------------------*/
 
 .date-picker input[type="text"] {
@@ -254,8 +258,6 @@ input:-ms-input-placeholder {
     font: inherit;
 }
 
-
-
 .number-o-guests-b input[type="text"],
 .number-o-guests-g input[type="text"] {
     box-sizing: border-box;
@@ -266,6 +268,7 @@ input:-ms-input-placeholder {
     margin-bottom: 30px; 
     color: #000000;
     font: inherit;
+    text-align: center;
 }
 
 .date-picker input[type="text"]:hover {
@@ -283,6 +286,10 @@ input:-ms-input-placeholder {
     width: 460px;
     text-align: left; 
     justify-content: space-between;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 26px;
+    color: #000000;
 }
 
 .number-o-guests-b,
@@ -297,7 +304,7 @@ input:-ms-input-placeholder {
 	font-size: 14px;
     line-height: 26px;
     color: #000000;
-    width: 113px;
+    width: 116px;
     padding-top: 5px;
     padding-right: 15px;
 }
@@ -311,6 +318,8 @@ input:-ms-input-placeholder {
     background-color: #f6f6f6;
     border: 0px;
     height: 38px;
+    text-transform: uppercase;
+}
 }
 
 .number-o-guests-g input,
@@ -363,8 +372,6 @@ input:-ms-input-placeholder {
     display: flex;
     position: relative;
     width: 117px;
-    margin-right: 6px;
-
 }
 
 .date-picker button,
@@ -547,7 +554,8 @@ input:-ms-input-placeholder {
 
 .container-hotels {
     margin-right: 73px;
-    margin-left:  73px
+    margin-left:  73px;
+    margin-bottom: 5px;
 }
 
 a.current {
@@ -606,6 +614,7 @@ a.current {
 
 .button {
     display: inline-block;
+    vertical-align: middle;
     height: 27px;
     margin-right: 3px;
     padding-left: 17px;
@@ -656,6 +665,7 @@ a.current {
 .social-list li {
     margin-top: 36px; 
     display: inline-block;
+    vertical-align: middle;
     width: 46px;
     height: 48px;
     background-color: #81b3d2;
@@ -670,6 +680,7 @@ a.current {
 
 .webstudio span {
     display: inline-block;
+    vertical-align: middle;
     margin-top: 46px;
     margin-left: auto;
     margin-right: 6px;
@@ -710,7 +721,7 @@ a.current {
 .result {
 	display: flex;
     justify-content: space-between;
-    min-height: 150px;
+    min-height: 151px;
     width: 1056px;
     border-top: 1px solid #e5e5e5;
     border-bottom: 1px solid #e5e5e5;
