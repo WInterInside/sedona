@@ -2,15 +2,15 @@
   *::before, 
   *::after {
     box-sizing: inherit;
-  }
+}
 
   html {
     box-sizing: border-box;
-  }
+}
 
   .content-box-component {
     box-sizing: content-box;
-  }
+}
 
 body {
     min-width: 1200px;
@@ -59,7 +59,7 @@ img {
     position: absolute;
     top: -1px;
     left: 530px;
-  }
+}
 
 .main-navigation {
     position: relative;
@@ -182,8 +182,8 @@ ul.site-navigation li {
 }
 
 .modal-search p {
-    margin-top: 20px;
-    margin-bottom: 50px;
+    margin-top: 24px;
+    margin-bottom: 47px;
 }
 
 button.modal-search {
@@ -216,6 +216,8 @@ button.modal-search:active {
     height: 395px;
     background-color: #ffffff;
 }
+
+
 
 /*cтилизация плейсхолдера*/
 input::-webkit-input-placeholder {  
@@ -252,6 +254,8 @@ input:-ms-input-placeholder {
     font: inherit;
 }
 
+
+
 .number-o-guests-b input[type="text"],
 .number-o-guests-g input[type="text"] {
     box-sizing: border-box;
@@ -262,6 +266,15 @@ input:-ms-input-placeholder {
     margin-bottom: 30px; 
     color: #000000;
     font: inherit;
+}
+
+.date-picker input[type="text"]:hover {
+    background-color: #ebebeb;
+}
+
+.date-picker input[type="text"]:focus {
+    background-color: #ffffff;
+    outline-color: #e5e5e5;
 }
 
 .date-picker,
@@ -379,38 +392,49 @@ input:-ms-input-placeholder {
 }
 
 /* плюс и минус нарисованные псевдоелементами*/
-
 .minus:after {
-content: "";
-height: 3px; 
-width: 11px;
-background: #a9a9a9;
-position: absolute; 
-right: 12px; 
-top: 17px;
+    content: "";
+    height: 3px; 
+    width: 11px;
+    background: #a9a9a9;
+    position: absolute; 
+    right: 12px; 
+    top: 17px;
 }
 
 .plus:after {
-content: "";
-height: 3px; 
-width: 11px;
-background: #a9a9a9;
-position: absolute; 
-right: 12px; 
-top: 17px;
+    content: "";
+    height: 3px; 
+    width: 11px;
+    background: #a9a9a9;
+    position: absolute; 
+    right: 12px; 
+    top: 17px;
 }
 
 .plus:before {
-content: "";
-height: 3px; 
-width: 11px;
-background: #a9a9a9;
-position: absolute; 
-right: 12px; 
-top: 17px;
-transform: rotate(90deg);
+    content: "";
+    height: 3px; 
+    width: 11px;
+    background: #a9a9a9;
+    position: absolute; 
+    right: 12px; 
+    top: 17px;
+    transform: rotate(90deg);
 }
 /*________________________________*/
+
+.minus:hover:after,
+.plus:hover:after,
+.plus:hover:before {
+    background-color: #000000;
+} 
+
+.minus:active:after,
+.plus:active:after,
+.plus:active:before {
+    background-color: #81b3d2;
+} 
 
 .number-of-guests {
     display: flex;
@@ -437,9 +461,6 @@ transform: rotate(90deg);
 .index-submit:active {
     color: rgba(255, 255, 255, 0.3);
     background-color: #72a9c9;
-}
-
-.index-submit:focus {
 }
 
 .index-map {
@@ -545,9 +566,6 @@ a.current {
     font-weight: bold;
 }
 
-.hotel-name:focus {
-}
-
 .hotel-name:hover {
 	color: #8eb7d1;
 }
@@ -567,9 +585,6 @@ a.current {
     min-width: 110px;
 }
 
-.more:focus {
-}
-
 .more:hover {
 	background-color: #669ec0;
 }
@@ -587,7 +602,7 @@ a.current {
     padding-top: 3px;
     background-color: #766357;
     min-width: 142px;
-  }
+}
 
 .button {
     display: inline-block;
@@ -613,7 +628,6 @@ a.current {
 	color: #666666;
 	background-color: #f2f2f2;
 }
-
 /* сетка */
 
 /*foter*/
@@ -703,26 +717,23 @@ a.current {
 }
 
 .hotel-photo {
-    margin-top: auto;
+    margin-top: 30px;
     margin-bottom: auto;
 }
 
 .result-content {
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: 30px;
     margin-right: auto;
-    height: 92px;
+    min-height: 92px;
 }
 
-.result-content h2,
+.result-content h2 {
+    margin-bottom: 6px; 
+}
+
 .result-content p {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-bottom: 11px;
-    padding-right: 5px;
-}
-
-.result-content h2{
+    margin: 0;
 }
 
 .search-rezult {
@@ -732,16 +743,17 @@ a.current {
 .hotel-rating {
     margin-left: auto;
     text-align: right;
-    margin-top: 25px;
-  }
+    margin-top: 30px;
+}
 
 .class-and-cost {
     display: flex;
-    justify-content: space-between;
-    height: 12px;
-    min-width: 180px;
-    padding-bottom: 32px;
-    padding-right: 75px;
+    margin-bottom: 14px;
+}
+
+.class-and-cost p {
+    width: 110px;
+    margin-right: 6px;
 }
 
 .hotel-rating p {
