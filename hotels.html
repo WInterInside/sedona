@@ -24,10 +24,15 @@
         </nav>
       </header>
       <main class="container-hotels">
+<h1 class="visually-hidden"> Поиск гостиниц в городе Седона </h1>
+
         <section class="hotel-options">
+
+
           <form action="https://echo.htmlacademy.ru" method="get">
-            <fieldset>
-              <legend> Инфраструктура: </legend>
+<div class="hotel-options-form">
+            <div class="infrastructure">
+              <h2> Инфраструктура: </h2>
               <ul>
                 <li>
                   <input type="checkbox" name="pull" id="pull">
@@ -42,9 +47,10 @@
                   <label for="wi-fi"> Wi-Fi </label>
                 </li>
               </ul>
-            </fieldset>
-            <fieldset>
-              <legend> Тип жилья: </legend>
+            </div>
+
+            <div class="type-of-housing">
+              <h2> Тип жилья: </h2>
               <ul>
                 <li>
                   <input type="checkbox" name="hotel" id="hotel">
@@ -59,9 +65,10 @@
                   <label for="apartaments"> Апартаменты </label>
                 </li>
               </ul>
-            </fieldset>
-            <fieldset>
-              <legend> Стоимость в сутки(р): </legend>
+            </div>
+
+            <div class="cost-per-day">
+              <h2> Стоимость в сутки(р): </h2>
               <label for="min-cost"> От </label>
               <input type="number" name="min-cost" id="min-cost" step="500" value="0" placeholder="минимальная сумма в сутки">
               <label for="max-cost"> До </label>
@@ -69,20 +76,24 @@
               <label class="visually-hidden" for="costrange"> Диапазон стоимости в сутки </label>
               <input type="range" name="costrange" id="costrange" min="0" max="3000" step="500">
               <input type="submit" name="show" value="Показать">
-            </fieldset>
+            </div>
+</div>
           </form>
-          <div class="search-rezult">
-            <h2> Найдено: </h2>
-            <span> 3 </span>
-            <a class="result-link" href="#"> По цене </a>
-            <a class="result-link" href="#"> По типу </a>
-            <a class="result-link" href="#"> По рейтингу </a>
-            <a class="up-arrow" href="#"> Вверх </a>
-            <a class="down-arrow" href="#"> Вниз </a>
-          </div>
+
         </section>
+
+        <div class="search-rezult">
+          <h2> Найдено: </h2>
+          <span> 3 </span>
+          <a class="result-link" href="#"> По цене </a>
+          <a class="result-link" href="#"> По типу </a>
+          <a class="result-link" href="#"> По рейтингу </a>
+          <a class="up-arrow" href="#"> Вверх </a>
+          <a class="down-arrow" href="#"> Вниз </a>
+        </div>
+
         <section class="searching-results">
-          <h1 class="visually-hidden"> Результаты поиска гостиниц </h1>
+          <h2 class="visually-hidden"> Результаты поиска гостиниц </h2>
           <div class="results-hotels">
             <ul>
               <li class="result">
