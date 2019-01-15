@@ -35,16 +35,27 @@
               <h2> Инфраструктура: </h2>
               <ul>
                 <li>
-                  <input type="checkbox" name="pull" id="pull" checked>
-                  <label for="pull"> Бассеин </label>
+                  <label class="hotel-options-check">
+                    <input type="checkbox" name="pull" class="visually-hidden" checked>
+                    <span class="checkbox-indicator"></span>
+                     Бассеин
+                  </label>
                 </li>
+
                 <li>
-                  <input type="checkbox" name="parking" id="parking">
-                  <label for="parking"> Парковка </label>
+                  <label class="hotel-options-check">
+                    <input type="checkbox" name="parking" class="visually-hidden">
+                    <span class="checkbox-indicator"></span>
+                     Парковка
+                  </label>
                 </li>
+
                 <li>
-                  <input type="checkbox" name="wi-fi" id="wi-fi">
-                  <label for="wi-fi"> Wi-Fi </label>
+                    <label class="hotel-options-check">
+                    <input type="checkbox" name="wi-fi"  class="visually-hidden">
+                    <span class="checkbox-indicator"></span>
+                     Wi-Fi
+                   </label>
                 </li>
               </ul>
             </div>
@@ -53,16 +64,25 @@
               <h2> Тип жилья: </h2>
               <ul>
                 <li>
-                  <input type="checkbox" name="hotel" id="hotel" checked>
-                  <label for="hotel"> Гостиница </label>
+                  <label class="hotel-options-check">
+                    <input type="checkbox" name="hotel" class="visually-hidden" checked>
+                    <span class="checkbox-indicator"></span>
+                     Гостиница
+                  </label>
                 </li>
                 <li>
-                  <input type="checkbox" name="motel" id="motel" checked>
-                  <label for="motel"> Мотель </label>
+                  <label class="hotel-options-check">
+                    <input type="checkbox" name="motel" class="visually-hidden" checked>
+                    <span class="checkbox-indicator"></span>
+                    Мотель
+                  </label>
                 </li>
                 <li>
-                  <input type="checkbox" name="apartaments" id="apartaments" checked>
-                  <label for="apartaments"> Апартаменты </label>
+                  <label class="hotel-options-check">
+                    <input type="checkbox" name="apartaments" class="visually-hidden" checked>
+                    <span class="checkbox-indicator"></span>
+                     Апартаменты
+                  </label>
                 </li>
               </ul>
             </div>
@@ -98,11 +118,11 @@
           <h2> Найдено: </h2>
           <span> 3 </span>
             <h3> Сортировка: </h3>
-          <a class="result-link" href="#"> По цене </a>
-          <a class="result-link" href="#"> По типу </a>
-          <a class="result-link" href="#"> По рейтингу </a>
+          <a class="result-link by-price current" href="#"> По цене </a>
+          <a class="result-link by-type" href="#"> По типу </a>
+          <a class="result-link by-rating" href="#"> По рейтингу </a>
           <a class="arrow arrow-up"  href="#"> Вверх </a>
-          <a class="arrow arrow-down" href="#"> Вниз </a>
+          <a class="arrow arrow-down current-arrow" href="#"> Вниз </a>
         </div>
 
         <section class="searching-results">
