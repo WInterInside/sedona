@@ -159,9 +159,15 @@ ul.site-navigation li {
     margin-bottom: 53px;
 }
 .reasons-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     padding: 0;
 }
 .reasons-item {
@@ -197,8 +203,12 @@ p.number-of-reason {
     padding-bottom: 20px;
 }
 .reasons-item:nth-child(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     color: #ffffff;
     font-weight: bold;
     font-size: 21px;
@@ -208,8 +218,12 @@ p.number-of-reason {
     padding-right: 100px;
 }
 .real-town {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     min-height: 256px;
     text-align: center;
 }
@@ -245,6 +259,8 @@ p.number-of-reason {
     font-weight: normal;
 }
 .list-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .reasons-item:nth-child(1), .reasons-item:nth-child(2) {
@@ -256,8 +272,15 @@ p.number-of-reason {
     min-height: 256px;
 }
 .sub-reasons-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     background-color: white;
     padding: 0;
 }
@@ -338,7 +361,7 @@ a.modal-search:active {
     color: rgba(255, 255, 255, 0.3);
 }
 .modal {
-    padding: 55px;
+    padding: 55px 55px 45px 55px;
     position: absolute;
     left: 315px;
     width: 570px;
@@ -538,12 +561,13 @@ a.modal-search:active {
 .index-submit {
     border: 0px;
     width: 458px;
-    height: 58px;
+    min-height: 58px;
     font-weight: bold;
     font-size: 21px;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 1);
     background-color: #81b3d2;
+    margin-bottom: 10px;
 }
 .index-submit:hover {
     background-color: #669ec0;
@@ -676,6 +700,8 @@ a.current {
     padding-right: 72px;
 }
 .hotel-options{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     color: #ffffff;
     background-color: #263b41;
@@ -685,9 +711,16 @@ a.current {
     margin-left:-72px;
 }
 .hotel-options-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     padding-left: 72px;
     width: 1200px;
 }
@@ -743,7 +776,9 @@ a.current {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     width: 2px;
     height: 22px;
     background: #ffffff;
@@ -787,7 +822,8 @@ label.max-price {
     background: #ffffff;
 }
 .range-toggle {
-    box-sizing:content-box;
+    -webkit-box-sizing:content-box;
+            box-sizing:content-box;
     width: 4px;
     height: 4px;
     position: absolute;
@@ -795,7 +831,8 @@ label.max-price {
     background: #ababab;
     border: 8px solid #ffffff;
     border-radius: 50%;
-    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+            box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
     cursor: pointer;
 }
 .range-toggle-min {
@@ -854,7 +891,9 @@ label.max-price {
     display: flex;
     margin-bottom: 26px;
     margin-top: 30px;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .sorting-results h2 {
     margin: 0;
@@ -989,7 +1028,7 @@ a.arrow {
     display: inline-block;
     vertical-align: middle;
     height: 27px;
-    margin-right: 3px;
+    margin-right: 4px;
     padding-left: 17px;
     padding-right: 17px;
 }
