@@ -902,6 +902,11 @@ label.max-price {
     background-repeat: no-repeat;
     opacity: 0.3;
 }
+.hotel-options-check input[type="checkbox"]:focus + .checkbox-indicator {
+    outline-color: -webkit-focus-ring-color;
+    outline-style: auto;
+    outline-width: 5px;
+}
 .sorting-results {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -922,19 +927,26 @@ label.max-price {
     line-height: 26px;
 }
 .sorting-results span {
-    padding-right: 48px;
+    padding-right: 46px;
     font-size: 21px;
     line-height: 26px;
 }
 .sorting-results h3 {
     margin: 0;
     padding-top: 2px;
-    padding-right: 38px;
+    padding-right: 28px;
     font-size: 12px;
     line-height: 18px;
 }
+.sorting-by {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 770px;
+}
 .result-link {
-    margin-right: 33px;
+    margin-right: 21px;
     font-size: 12px;
     line-height: 18px;
     color: #cacaca;
