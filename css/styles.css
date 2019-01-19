@@ -365,6 +365,10 @@ a.modal-search:active {
     width: 570px;
     min-height: 395px;
     background-color: #ffffff;
+    display: none;
+}
+.modal-show {
+    display: block;
 }
 .change-placeholder::-webkit-input-placeholder {
     line-height: 38px;
